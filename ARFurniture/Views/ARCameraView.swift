@@ -22,6 +22,14 @@ struct ARCameraView: View {
         ZStack(alignment: .bottom) {
             CustomARViewRepresentable(modelName: $modelName)
                 .ignoresSafeArea()
+            
+            Button(action: {
+                ActionManager.shared.actionStream.send(.placeModel)
+            }) {
+                FilledButton("Show model")
+            }
+            .padding(.bottom, 50)
+            .frame(width: UIScreen.main.bounds.width - 16, height: 50, alignment: .center)
         }
     }
 }

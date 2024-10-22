@@ -13,28 +13,22 @@ import SwiftUI
 
 struct FilledButton: View {
     let buttonText: String
-    let modelName: String?
     
-    init(_ text: String, modelName: String?) {
+    init(_ text: String) {
         self.buttonText = text
-        self.modelName = modelName
     }
     
     var body: some View {
-            NavigationLink {
-                ARCameraView(modelName ?? "")
-            } label: {
-                Text(buttonText)
-                    .font(.custom("Lufga-Regular", size: 17))
-                    .padding(16)
-            }
+        Text(buttonText)
+            .font(.custom("Lufga-Regular", size: 17))
+            .padding(16)
             .frame(width: UIScreen.main.bounds.width - 16, height: 50, alignment: .center)
-            .background(Color.accentColor)
+            .background(Color.accent)
             .cornerRadius(12)
             .foregroundColor(Color.backgroundPrimary)
-        }
+    }
 }
 
 #Preview {
-    FilledButton("Next", modelName: "chair_swan.usdz")
+    FilledButton("Next") 
 }

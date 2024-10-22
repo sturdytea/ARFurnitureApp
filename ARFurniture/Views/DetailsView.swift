@@ -43,7 +43,11 @@ struct DetailsView: View {
                 Spacer()
             }
             .padding(EdgeInsets(top: 0, leading: 32, bottom: 32, trailing: 0))
-            FilledButton("Show in AR", modelName: viewModel.furnitures[index].modelName)
+            NavigationLink {
+                ARCameraView(viewModel.furnitures[index].modelName)
+            } label: {
+                FilledButton("Show in AR")
+            }
         }
         .background(Color.backgroundPrimary)
     }
