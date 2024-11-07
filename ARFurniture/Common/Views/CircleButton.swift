@@ -42,7 +42,3 @@ struct CircleButton: View {
         }
     }
 }
-
-//#Preview {
-//    CircleButton("chevron.left", true, action: {})
-//}

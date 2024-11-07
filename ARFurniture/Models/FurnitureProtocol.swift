@@ -16,5 +16,5 @@ protocol FurnitureProtocol {
     var name: String { get }
     var price: Double { get }
     var description: String { get }
-    var tag: String { get }
+    var tag: [FurnitureTypes] { get }
 }

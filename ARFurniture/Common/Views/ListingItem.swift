@@ -16,18 +16,21 @@ struct ListingItem: View {
     var modelName: String
     var name: String
     var price: Double
+    var scene: SCNScene?
     
     init(modelName: String, name: String, price: Double) {
         self.modelName = modelName
         self.name = name
         self.price = price
+        self.scene = SCNScene(named: modelName)
+        let angleInRadians = Float.pi / 16
+        let _ = scene?.background.contents = UIColor(.backgroundPrimary)
+        let _ = scene?.rootNode.rotation = SCNVector4(x: 0, y: -1, z: 0, w: angleInRadians)
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            // TODO: Remove background
-            // TODO: Rotate camera position
-            SceneView(scene: SCNScene(named: modelName), /*pointOfView: cameraNode, */options: [.autoenablesDefaultLighting])
+            SceneView(scene: scene, options: [.autoenablesDefaultLighting])
                     .frame(width: UIScreen.main.bounds.width / 3)
                     .background(.clear)
             Text(name)

@@ -15,16 +15,21 @@ import SceneKit
 struct DetailsView: View {
     var index: Int
     @ObservedObject var viewModel: FurnitureViewModel
+    var scene: SCNScene?
     
     init(_ index: Int) {
         self.index = index
         self.viewModel = FurnitureViewModel()
+        self.scene = SCNScene(named: viewModel.furnitures[index].modelName)
+        let angleInRadians = Float.pi / 16
+        let _ = scene?.background.contents = UIColor(.backgroundPrimary)
+        let _ = scene?.rootNode.rotation = SCNVector4(x: 0, y: -1, z: 0, w: angleInRadians)
     }
     
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                SceneView(scene: SCNScene(named: viewModel.furnitures[index].modelName), options: [.allowsCameraControl, .autoenablesDefaultLighting])
+                SceneView(scene: scene, options: [.allowsCameraControl, .autoenablesDefaultLighting])
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
                     .padding(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
                 HStack {
