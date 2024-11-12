@@ -13,16 +13,12 @@ import SwiftUI
 import SceneKit
 
 struct ListingItem: View {
-    var modelName: String
-    var name: String
-    var price: Double
+    var furniture: FurnitureModel
     var scene: SCNScene?
     
-    init(modelName: String, name: String, price: Double) {
-        self.modelName = modelName
-        self.name = name
-        self.price = price
-        self.scene = SCNScene(named: modelName)
+    init(_ furniture: FurnitureModel) {
+        self.furniture = furniture
+        self.scene = SCNScene(named: furniture.modelName)
         let angleInRadians = Float.pi / 16
         let _ = scene?.background.contents = UIColor(.backgroundPrimary)
         let _ = scene?.rootNode.rotation = SCNVector4(x: 0, y: -1, z: 0, w: angleInRadians)
@@ -33,18 +29,14 @@ struct ListingItem: View {
             SceneView(scene: scene, options: [.autoenablesDefaultLighting])
                     .frame(width: UIScreen.main.bounds.width / 3)
                     .background(.clear)
-            Text(name)
+            Text(furniture.name)
                 .font(.custom("Lufga-Regular", size: 14))
                 .foregroundStyle(.textSecondary)
-            Text(String("$\(price)"))
+            Text(String("$\(furniture.price)"))
                 .font(.custom("Lufga-Regular", size: 10))
                 .foregroundStyle(.accent)
         }
         .padding(16)
         .frame(height: 200)
     }
-}
-
-#Preview {
-    ListingItem(modelName: "chair_swan.usdz", name: "Chair Swan", price: 199.95)
 }

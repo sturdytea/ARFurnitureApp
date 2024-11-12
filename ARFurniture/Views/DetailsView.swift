@@ -13,14 +13,12 @@ import SwiftUI
 import SceneKit
 
 struct DetailsView: View {
-    var index: Int
-    @ObservedObject var viewModel: FurnitureViewModel
+    var furniture: FurnitureModel
     var scene: SCNScene?
     
-    init(_ index: Int) {
-        self.index = index
-        self.viewModel = FurnitureViewModel()
-        self.scene = SCNScene(named: viewModel.furnitures[index].modelName)
+    init(_ furniture: FurnitureModel) {
+        self.furniture = furniture
+        self.scene = SCNScene(named: furniture.modelName)
         let angleInRadians = Float.pi / 16
         let _ = scene?.background.contents = UIColor(.backgroundPrimary)
         let _ = scene?.rootNode.rotation = SCNVector4(x: 0, y: -1, z: 0, w: angleInRadians)
@@ -33,23 +31,23 @@ struct DetailsView: View {
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
                     .padding(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
                 HStack {
-                    Text(viewModel.furnitures[index].name)
+                    Text(furniture.name)
                         .font(.custom("Lufga-Bold", size: 24, relativeTo: .title))
                         .foregroundStyle(.textPrimary)
                     Spacer()
-                    Text(String("$\(viewModel.furnitures[index].price)"))
+                    Text(String("$\(furniture.price)"))
                         .font(.custom("Lufga-Medium", size: 24, relativeTo: .title))
                         .foregroundStyle(.accent)
                 }
                 .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                Text(viewModel.furnitures[index].description)
+                Text(furniture.description)
                     .font(.custom("Lufga-Regular", size: 14, relativeTo: .body))
                     .foregroundStyle(.textSecondary)
                 Spacer()
             }
             .padding(EdgeInsets(top: 0, leading: 32, bottom: 32, trailing: 0))
             NavigationLink {
-                ARCameraView(viewModel.furnitures[index].modelName)
+                ARCameraView(furniture.modelName)
             } label: {
                 FilledButton("Show in AR")
             }
@@ -59,5 +57,5 @@ struct DetailsView: View {
 }
 
 #Preview {
-    DetailsView(0)
+    DetailsView(FurnitureModel(id: 0, modelName: "chair_swan.usdz", name: "Chair Swan", price: 19.9, description: "Description", type: "Chair"))
 }

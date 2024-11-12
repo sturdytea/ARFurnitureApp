@@ -13,6 +13,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel: FurnitureViewModel
+    @State var selectedType = FurnitureTypes.all
     
     init() {
         viewModel = FurnitureViewModel()
@@ -21,22 +22,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                HStack {
-                    Text("For You")
-                        .font(.custom("Lufga-Regular", size: 18, relativeTo: .title2))
-                        .foregroundStyle(.textPrimary)
-                }
+                HorizontalFilterView(selectedType: $selectedType)
+                    .environmentObject(viewModel)
+                Text("For You")
+                    .font(.custom("Lufga-Regular", size: 18, relativeTo: .title2))
+                    .foregroundStyle(.textPrimary)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(0..<viewModel.furnitures.count, id: \.self) { index in
+                        ForEach(viewModel.furnitures.filter({ furniture in
+                            filterType(furniture)
+                        }), id: \.self) { furniture in
                             NavigationLink {
-                                DetailsView(index)
+                                DetailsView(furniture)
                             } label: {
-                                ListingItem(modelName: viewModel.furnitures[index].modelName, name: viewModel.furnitures[index].name, price: viewModel.furnitures[index].price)
-                                if index < viewModel.furnitures.count - 1 {
-                                    Divider().frame(width: 1)
-                                        .frame(height: 154)
-                                }
+                                ListingItem(furniture)
                             }
                         }
                     }
@@ -47,6 +46,15 @@ struct ContentView: View {
             .frame(maxHeight: .infinity)
             .navigationBarTitleDisplayMode(.inline)
             .background(Color.backgroundPrimary)
+        }
+    }
+    
+    // MARK: Filter helper
+    private func filterType(_ furniture: FurnitureModel) -> Bool {
+        if selectedType == FurnitureTypes.all || selectedType.rawValue == furniture.type {
+            return true
+        } else {
+            return false
         }
     }
 }

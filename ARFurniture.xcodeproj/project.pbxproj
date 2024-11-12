@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B83912C02CC79C5A004030BB /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B83912BF2CC79C5A004030BB /* FocusEntity */; };
+		B8B4B7992CE344F800896EF6 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B8B4B7982CE344F800896EF6 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83912C02CC79C5A004030BB /* FocusEntity in Frameworks */,
+				B8B4B7992CE344F800896EF6 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = ARFurniture;
 			packageProductDependencies = (
-				B83912BF2CC79C5A004030BB /* FocusEntity */,
+				B8B4B7982CE344F800896EF6 /* FocusEntity */,
 			);
 			productName = ARFurniture;
 			productReference = B83911AF2CBE6C4C004030BB /* ARFurniture.app */;
@@ -114,7 +114,7 @@
 			mainGroup = B83911A62CBE6C4C004030BB;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B83912BE2CC79C5A004030BB /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				B8B4B7972CE344F800896EF6 /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B83911B02CBE6C4C004030BB /* Products */;
@@ -354,7 +354,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B83912BE2CC79C5A004030BB /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+		B8B4B7972CE344F800896EF6 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
 			requirement = {
@@ -365,9 +365,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B83912BF2CC79C5A004030BB /* FocusEntity */ = {
+		B8B4B7982CE344F800896EF6 /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B83912BE2CC79C5A004030BB /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			package = B8B4B7972CE344F800896EF6 /* XCRemoteSwiftPackageReference "FocusEntity" */;
 			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */
