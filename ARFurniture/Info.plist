@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>Logo</string>
+		<key>UIColorName</key>
+		<string>BackgroundPrimaryColor</string>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow to use camera to continue</string>
 	<key>UIAppFonts</key>

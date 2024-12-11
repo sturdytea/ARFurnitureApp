@@ -18,14 +18,16 @@ struct FurnitureModel: Codable, Identifiable, Hashable {
     var price: Double
     var description: String
     var type: String
+    var isRecommended: Bool
     
     
-    init(id: Int, modelName: String, name: String, price: Double, description: String, type: String) {
+    init(id: Int, modelName: String, name: String, price: Double, description: String, type: String, isRecommended: Bool = false) {
         self.id = id
         self.modelName = modelName
         self.name = name
         self.price = price
         self.description = description
         self.type = type
+        self.isRecommended = isRecommended
     }
 }

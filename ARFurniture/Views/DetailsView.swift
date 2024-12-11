@@ -49,7 +49,7 @@ struct DetailsView: View {
             NavigationLink {
                 ARCameraView(furniture.modelName)
             } label: {
-                FilledButton("Show in AR")
+                FilledButton(LocalizedContent.openCamera)
             }
         }
         .background(Color.backgroundPrimary)

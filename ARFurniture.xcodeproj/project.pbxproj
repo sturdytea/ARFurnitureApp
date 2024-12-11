@@ -8,32 +8,102 @@
 
 /* Begin PBXBuildFile section */
 		B8B4B7992CE344F800896EF6 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B8B4B7982CE344F800896EF6 /* FocusEntity */; };
+		B8B4B90C2CECC96400896EF6 /* arm_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8D82CECC96400896EF6 /* arm_chair.usdz */; };
+		B8B4B90D2CECC96400896EF6 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8D92CECC96400896EF6 /* chair_swan.usdz */; };
+		B8B4B90E2CECC96400896EF6 /* floor_lamp_holding_sun.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DA2CECC96400896EF6 /* floor_lamp_holding_sun.usdz */; };
+		B8B4B90F2CECC96400896EF6 /* futuristic_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DB2CECC96400896EF6 /* futuristic_chair.usdz */; };
+		B8B4B9102CECC96400896EF6 /* modern_floor_lamp.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DC2CECC96400896EF6 /* modern_floor_lamp.usdz */; };
+		B8B4B9112CECC96400896EF6 /* modern_stool_ottoman.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DD2CECC96400896EF6 /* modern_stool_ottoman.usdz */; };
+		B8B4B9122CECC96400896EF6 /* monstera_flower_pot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DE2CECC96400896EF6 /* monstera_flower_pot.usdz */; };
+		B8B4B9132CECC96400896EF6 /* office_chair_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8DF2CECC96400896EF6 /* office_chair_2.usdz */; };
+		B8B4B9142CECC96400896EF6 /* Lufga-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E12CECC96400896EF6 /* Lufga-Bold.ttf */; };
+		B8B4B9152CECC96400896EF6 /* Lufga-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E22CECC96400896EF6 /* Lufga-Medium.ttf */; };
+		B8B4B9162CECC96400896EF6 /* Lufga-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E32CECC96400896EF6 /* Lufga-Regular.ttf */; };
+		B8B4B9172CECC96400896EF6 /* Lufga-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E42CECC96400896EF6 /* Lufga-SemiBold.ttf */; };
+		B8B4B9182CECC96400896EF6 /* LufgaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E52CECC96400896EF6 /* LufgaBlack.ttf */; };
+		B8B4B9192CECC96400896EF6 /* LufgaBlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E62CECC96400896EF6 /* LufgaBlackItalic.ttf */; };
+		B8B4B91A2CECC96400896EF6 /* LufgaBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E72CECC96400896EF6 /* LufgaBoldItalic.ttf */; };
+		B8B4B91B2CECC96400896EF6 /* LufgaExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E82CECC96400896EF6 /* LufgaExtraBold.ttf */; };
+		B8B4B91C2CECC96400896EF6 /* LufgaExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8E92CECC96400896EF6 /* LufgaExtraBoldItalic.ttf */; };
+		B8B4B91D2CECC96400896EF6 /* LufgaExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8EA2CECC96400896EF6 /* LufgaExtraLight.ttf */; };
+		B8B4B91E2CECC96400896EF6 /* LufgaExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8EB2CECC96400896EF6 /* LufgaExtraLightItalic.ttf */; };
+		B8B4B91F2CECC96400896EF6 /* LufgaItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8EC2CECC96400896EF6 /* LufgaItalic.ttf */; };
+		B8B4B9202CECC96400896EF6 /* LufgaLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8ED2CECC96400896EF6 /* LufgaLight.ttf */; };
+		B8B4B9212CECC96400896EF6 /* LufgaLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8EE2CECC96400896EF6 /* LufgaLightItalic.ttf */; };
+		B8B4B9222CECC96400896EF6 /* LufgaMediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8EF2CECC96400896EF6 /* LufgaMediumItalic.ttf */; };
+		B8B4B9232CECC96400896EF6 /* LufgaSemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8F02CECC96400896EF6 /* LufgaSemiBoldItalic.ttf */; };
+		B8B4B9242CECC96400896EF6 /* LufgaThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8F12CECC96400896EF6 /* LufgaThin.ttf */; };
+		B8B4B9252CECC96400896EF6 /* LufgaThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8F22CECC96400896EF6 /* LufgaThinItalic.ttf */; };
+		B8B4B9262CECC96400896EF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8FF2CECC96400896EF6 /* Preview Assets.xcassets */; };
+		B8B4B9272CECC96400896EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B9082CECC96400896EF6 /* Images.xcassets */; };
+		B8B4B9292CECC96400896EF6 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8F42CECC96400896EF6 /* CircleButton.swift */; };
+		B8B4B92A2CECC96400896EF6 /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8F52CECC96400896EF6 /* FilledButton.swift */; };
+		B8B4B92B2CECC96400896EF6 /* HorizontalFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8F62CECC96400896EF6 /* HorizontalFilterView.swift */; };
+		B8B4B92C2CECC96400896EF6 /* ListingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8F72CECC96400896EF6 /* ListingItem.swift */; };
+		B8B4B92D2CECC96400896EF6 /* NewsBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8F82CECC96400896EF6 /* NewsBanner.swift */; };
+		B8B4B92E2CECC96400896EF6 /* CarouselItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8FB2CECC96400896EF6 /* CarouselItemModel.swift */; };
+		B8B4B92F2CECC96400896EF6 /* FurnitureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8FC2CECC96400896EF6 /* FurnitureModel.swift */; };
+		B8B4B9302CECC96400896EF6 /* FurnitureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B8FD2CECC96400896EF6 /* FurnitureProtocol.swift */; };
+		B8B4B9312CECC96400896EF6 /* FurnitureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9012CECC96400896EF6 /* FurnitureViewModel.swift */; };
+		B8B4B9322CECC96400896EF6 /* ARCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9032CECC96400896EF6 /* ARCameraView.swift */; };
+		B8B4B9332CECC96400896EF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9042CECC96400896EF6 /* ContentView.swift */; };
+		B8B4B9342CECC96400896EF6 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9052CECC96400896EF6 /* DetailsView.swift */; };
+		B8B4B9352CECC96400896EF6 /* ARFurnitureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9072CECC96400896EF6 /* ARFurnitureApp.swift */; };
+		B8B4B9362CECC96400896EF6 /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */; };
+		B8B4B9382CECCA3B00896EF6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B9372CECCA3B00896EF6 /* Colors.xcassets */; };
+		B8B4B93A2CECCB4600896EF6 /* LocalizedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B9392CECCB4600896EF6 /* LocalizedContent.swift */; };
+		B8B4B93D2CECCE5000896EF6 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B93C2CECCE5000896EF6 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B83911AF2CBE6C4C004030BB /* ARFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B4B8D82CECC96400896EF6 /* arm_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = arm_chair.usdz; sourceTree = "<group>"; };
+		B8B4B8D92CECC96400896EF6 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = chair_swan.usdz; sourceTree = "<group>"; };
+		B8B4B8DA2CECC96400896EF6 /* floor_lamp_holding_sun.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor_lamp_holding_sun.usdz; sourceTree = "<group>"; };
+		B8B4B8DB2CECC96400896EF6 /* futuristic_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = futuristic_chair.usdz; sourceTree = "<group>"; };
+		B8B4B8DC2CECC96400896EF6 /* modern_floor_lamp.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = modern_floor_lamp.usdz; sourceTree = "<group>"; };
+		B8B4B8DD2CECC96400896EF6 /* modern_stool_ottoman.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = modern_stool_ottoman.usdz; sourceTree = "<group>"; };
+		B8B4B8DE2CECC96400896EF6 /* monstera_flower_pot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = monstera_flower_pot.usdz; sourceTree = "<group>"; };
+		B8B4B8DF2CECC96400896EF6 /* office_chair_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = office_chair_2.usdz; sourceTree = "<group>"; };
+		B8B4B8E12CECC96400896EF6 /* Lufga-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufga-Bold.ttf"; sourceTree = "<group>"; };
+		B8B4B8E22CECC96400896EF6 /* Lufga-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufga-Medium.ttf"; sourceTree = "<group>"; };
+		B8B4B8E32CECC96400896EF6 /* Lufga-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufga-Regular.ttf"; sourceTree = "<group>"; };
+		B8B4B8E42CECC96400896EF6 /* Lufga-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufga-SemiBold.ttf"; sourceTree = "<group>"; };
+		B8B4B8E52CECC96400896EF6 /* LufgaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaBlack.ttf; sourceTree = "<group>"; };
+		B8B4B8E62CECC96400896EF6 /* LufgaBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaBlackItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8E72CECC96400896EF6 /* LufgaBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaBoldItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8E82CECC96400896EF6 /* LufgaExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaExtraBold.ttf; sourceTree = "<group>"; };
+		B8B4B8E92CECC96400896EF6 /* LufgaExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaExtraBoldItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8EA2CECC96400896EF6 /* LufgaExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaExtraLight.ttf; sourceTree = "<group>"; };
+		B8B4B8EB2CECC96400896EF6 /* LufgaExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaExtraLightItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8EC2CECC96400896EF6 /* LufgaItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8ED2CECC96400896EF6 /* LufgaLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaLight.ttf; sourceTree = "<group>"; };
+		B8B4B8EE2CECC96400896EF6 /* LufgaLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaLightItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8EF2CECC96400896EF6 /* LufgaMediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaMediumItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8F02CECC96400896EF6 /* LufgaSemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaSemiBoldItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8F12CECC96400896EF6 /* LufgaThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaThin.ttf; sourceTree = "<group>"; };
+		B8B4B8F22CECC96400896EF6 /* LufgaThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LufgaThinItalic.ttf; sourceTree = "<group>"; };
+		B8B4B8F42CECC96400896EF6 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		B8B4B8F52CECC96400896EF6 /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		B8B4B8F62CECC96400896EF6 /* HorizontalFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFilterView.swift; sourceTree = "<group>"; };
+		B8B4B8F72CECC96400896EF6 /* ListingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItem.swift; sourceTree = "<group>"; };
+		B8B4B8F82CECC96400896EF6 /* NewsBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBanner.swift; sourceTree = "<group>"; };
+		B8B4B8FB2CECC96400896EF6 /* CarouselItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemModel.swift; sourceTree = "<group>"; };
+		B8B4B8FC2CECC96400896EF6 /* FurnitureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureModel.swift; sourceTree = "<group>"; };
+		B8B4B8FD2CECC96400896EF6 /* FurnitureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureProtocol.swift; sourceTree = "<group>"; };
+		B8B4B8FF2CECC96400896EF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8B4B9012CECC96400896EF6 /* FurnitureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureViewModel.swift; sourceTree = "<group>"; };
+		B8B4B9032CECC96400896EF6 /* ARCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraView.swift; sourceTree = "<group>"; };
+		B8B4B9042CECC96400896EF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8B4B9052CECC96400896EF6 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		B8B4B9072CECC96400896EF6 /* ARFurnitureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFurnitureApp.swift; sourceTree = "<group>"; };
+		B8B4B9082CECC96400896EF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
+		B8B4B90A2CECC96400896EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B4B9372CECCA3B00896EF6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B8B4B9392CECCB4600896EF6 /* LocalizedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedContent.swift; sourceTree = "<group>"; };
+		B8B4B93C2CECCE5000896EF6 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B83912A72CC41FFC004030BB /* Exceptions for "ARFurniture" folder in "ARFurniture" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B83911AE2CBE6C4C004030BB /* ARFurniture */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B83911B12CBE6C4C004030BB /* ARFurniture */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B83912A72CC41FFC004030BB /* Exceptions for "ARFurniture" folder in "ARFurniture" target */,
-			);
-			path = ARFurniture;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B83911AC2CBE6C4C004030BB /* Frameworks */ = {
@@ -50,7 +120,7 @@
 		B83911A62CBE6C4C004030BB = {
 			isa = PBXGroup;
 			children = (
-				B83911B12CBE6C4C004030BB /* ARFurniture */,
+				B8B4B90B2CECC96400896EF6 /* ARFurniture */,
 				B83911B02CBE6C4C004030BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +131,131 @@
 				B83911AF2CBE6C4C004030BB /* ARFurniture.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B8B4B8E02CECC96400896EF6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8D82CECC96400896EF6 /* arm_chair.usdz */,
+				B8B4B8D92CECC96400896EF6 /* chair_swan.usdz */,
+				B8B4B8DA2CECC96400896EF6 /* floor_lamp_holding_sun.usdz */,
+				B8B4B8DB2CECC96400896EF6 /* futuristic_chair.usdz */,
+				B8B4B8DC2CECC96400896EF6 /* modern_floor_lamp.usdz */,
+				B8B4B8DD2CECC96400896EF6 /* modern_stool_ottoman.usdz */,
+				B8B4B8DE2CECC96400896EF6 /* monstera_flower_pot.usdz */,
+				B8B4B8DF2CECC96400896EF6 /* office_chair_2.usdz */,
+				B8B4B9082CECC96400896EF6 /* Images.xcassets */,
+				B8B4B9372CECCA3B00896EF6 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B8B4B8F32CECC96400896EF6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8E12CECC96400896EF6 /* Lufga-Bold.ttf */,
+				B8B4B8E22CECC96400896EF6 /* Lufga-Medium.ttf */,
+				B8B4B8E32CECC96400896EF6 /* Lufga-Regular.ttf */,
+				B8B4B8E42CECC96400896EF6 /* Lufga-SemiBold.ttf */,
+				B8B4B8E52CECC96400896EF6 /* LufgaBlack.ttf */,
+				B8B4B8E62CECC96400896EF6 /* LufgaBlackItalic.ttf */,
+				B8B4B8E72CECC96400896EF6 /* LufgaBoldItalic.ttf */,
+				B8B4B8E82CECC96400896EF6 /* LufgaExtraBold.ttf */,
+				B8B4B8E92CECC96400896EF6 /* LufgaExtraBoldItalic.ttf */,
+				B8B4B8EA2CECC96400896EF6 /* LufgaExtraLight.ttf */,
+				B8B4B8EB2CECC96400896EF6 /* LufgaExtraLightItalic.ttf */,
+				B8B4B8EC2CECC96400896EF6 /* LufgaItalic.ttf */,
+				B8B4B8ED2CECC96400896EF6 /* LufgaLight.ttf */,
+				B8B4B8EE2CECC96400896EF6 /* LufgaLightItalic.ttf */,
+				B8B4B8EF2CECC96400896EF6 /* LufgaMediumItalic.ttf */,
+				B8B4B8F02CECC96400896EF6 /* LufgaSemiBoldItalic.ttf */,
+				B8B4B8F12CECC96400896EF6 /* LufgaThin.ttf */,
+				B8B4B8F22CECC96400896EF6 /* LufgaThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B8B4B8F92CECC96400896EF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8F42CECC96400896EF6 /* CircleButton.swift */,
+				B8B4B8F52CECC96400896EF6 /* FilledButton.swift */,
+				B8B4B8F62CECC96400896EF6 /* HorizontalFilterView.swift */,
+				B8B4B8F72CECC96400896EF6 /* ListingItem.swift */,
+				B8B4B8F82CECC96400896EF6 /* NewsBanner.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8B4B8FA2CECC96400896EF6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B93B2CECCE4400896EF6 /* Extensions */,
+				B8B4B8F32CECC96400896EF6 /* Fonts */,
+				B8B4B8F92CECC96400896EF6 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B8B4B8FE2CECC96400896EF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8FB2CECC96400896EF6 /* CarouselItemModel.swift */,
+				B8B4B8FC2CECC96400896EF6 /* FurnitureModel.swift */,
+				B8B4B8FD2CECC96400896EF6 /* FurnitureProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8B4B9002CECC96400896EF6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8FF2CECC96400896EF6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8B4B9022CECC96400896EF6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B9012CECC96400896EF6 /* FurnitureViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B8B4B9062CECC96400896EF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B9032CECC96400896EF6 /* ARCameraView.swift */,
+				B8B4B9042CECC96400896EF6 /* ContentView.swift */,
+				B8B4B9052CECC96400896EF6 /* DetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8B4B90B2CECC96400896EF6 /* ARFurniture */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B8E02CECC96400896EF6 /* Assets */,
+				B8B4B8FA2CECC96400896EF6 /* Common */,
+				B8B4B8FE2CECC96400896EF6 /* Models */,
+				B8B4B9002CECC96400896EF6 /* Preview Content */,
+				B8B4B9022CECC96400896EF6 /* ViewModels */,
+				B8B4B9062CECC96400896EF6 /* Views */,
+				B8B4B9072CECC96400896EF6 /* ARFurnitureApp.swift */,
+				B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */,
+				B8B4B90A2CECC96400896EF6 /* Info.plist */,
+				B8B4B9392CECCB4600896EF6 /* LocalizedContent.swift */,
+			);
+			path = ARFurniture;
+			sourceTree = "<group>";
+		};
+		B8B4B93B2CECCE4400896EF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B93C2CECCE5000896EF6 /* Font.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +272,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B83911B12CBE6C4C004030BB /* ARFurniture */,
 			);
 			name = ARFurniture;
 			packageProductDependencies = (
@@ -131,6 +323,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B4B90C2CECC96400896EF6 /* arm_chair.usdz in Resources */,
+				B8B4B90D2CECC96400896EF6 /* chair_swan.usdz in Resources */,
+				B8B4B90E2CECC96400896EF6 /* floor_lamp_holding_sun.usdz in Resources */,
+				B8B4B90F2CECC96400896EF6 /* futuristic_chair.usdz in Resources */,
+				B8B4B9102CECC96400896EF6 /* modern_floor_lamp.usdz in Resources */,
+				B8B4B9112CECC96400896EF6 /* modern_stool_ottoman.usdz in Resources */,
+				B8B4B9122CECC96400896EF6 /* monstera_flower_pot.usdz in Resources */,
+				B8B4B9132CECC96400896EF6 /* office_chair_2.usdz in Resources */,
+				B8B4B9142CECC96400896EF6 /* Lufga-Bold.ttf in Resources */,
+				B8B4B9152CECC96400896EF6 /* Lufga-Medium.ttf in Resources */,
+				B8B4B9162CECC96400896EF6 /* Lufga-Regular.ttf in Resources */,
+				B8B4B9172CECC96400896EF6 /* Lufga-SemiBold.ttf in Resources */,
+				B8B4B9182CECC96400896EF6 /* LufgaBlack.ttf in Resources */,
+				B8B4B9192CECC96400896EF6 /* LufgaBlackItalic.ttf in Resources */,
+				B8B4B91A2CECC96400896EF6 /* LufgaBoldItalic.ttf in Resources */,
+				B8B4B91B2CECC96400896EF6 /* LufgaExtraBold.ttf in Resources */,
+				B8B4B91C2CECC96400896EF6 /* LufgaExtraBoldItalic.ttf in Resources */,
+				B8B4B91D2CECC96400896EF6 /* LufgaExtraLight.ttf in Resources */,
+				B8B4B91E2CECC96400896EF6 /* LufgaExtraLightItalic.ttf in Resources */,
+				B8B4B91F2CECC96400896EF6 /* LufgaItalic.ttf in Resources */,
+				B8B4B9202CECC96400896EF6 /* LufgaLight.ttf in Resources */,
+				B8B4B9212CECC96400896EF6 /* LufgaLightItalic.ttf in Resources */,
+				B8B4B9222CECC96400896EF6 /* LufgaMediumItalic.ttf in Resources */,
+				B8B4B9232CECC96400896EF6 /* LufgaSemiBoldItalic.ttf in Resources */,
+				B8B4B9242CECC96400896EF6 /* LufgaThin.ttf in Resources */,
+				B8B4B9252CECC96400896EF6 /* LufgaThinItalic.ttf in Resources */,
+				B8B4B9382CECCA3B00896EF6 /* Colors.xcassets in Resources */,
+				B8B4B9262CECC96400896EF6 /* Preview Assets.xcassets in Resources */,
+				B8B4B9272CECC96400896EF6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +362,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B4B9292CECC96400896EF6 /* CircleButton.swift in Sources */,
+				B8B4B92A2CECC96400896EF6 /* FilledButton.swift in Sources */,
+				B8B4B92B2CECC96400896EF6 /* HorizontalFilterView.swift in Sources */,
+				B8B4B92C2CECC96400896EF6 /* ListingItem.swift in Sources */,
+				B8B4B92D2CECC96400896EF6 /* NewsBanner.swift in Sources */,
+				B8B4B92E2CECC96400896EF6 /* CarouselItemModel.swift in Sources */,
+				B8B4B92F2CECC96400896EF6 /* FurnitureModel.swift in Sources */,
+				B8B4B9302CECC96400896EF6 /* FurnitureProtocol.swift in Sources */,
+				B8B4B9312CECC96400896EF6 /* FurnitureViewModel.swift in Sources */,
+				B8B4B9322CECC96400896EF6 /* ARCameraView.swift in Sources */,
+				B8B4B9332CECC96400896EF6 /* ContentView.swift in Sources */,
+				B8B4B9342CECC96400896EF6 /* DetailsView.swift in Sources */,
+				B8B4B93D2CECCE5000896EF6 /* Font.swift in Sources */,
+				B8B4B9352CECC96400896EF6 /* ARFurnitureApp.swift in Sources */,
+				B8B4B93A2CECCB4600896EF6 /* LocalizedContent.swift in Sources */,
+				B8B4B9362CECC96400896EF6 /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

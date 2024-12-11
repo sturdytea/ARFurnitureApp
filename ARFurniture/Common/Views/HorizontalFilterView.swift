@@ -27,7 +27,7 @@ struct HorizontalFilterView: View {
                             .onTapGesture {
                                 selectedType = type
                             }
-                            .foregroundStyle(selectedType == type ? .accent : .white)
+                            .foregroundStyle(selectedType == type ? .accent : .textPrimary)
                         Rectangle()
                             .frame(height: 0.5)
                             .foregroundStyle(selectedType == type ? .accent : .backgroundPrimary)

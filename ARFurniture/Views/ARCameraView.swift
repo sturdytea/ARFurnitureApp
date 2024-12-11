@@ -26,7 +26,7 @@ struct ARCameraView: View {
             Button(action: {
                 ActionManager.shared.actionStream.send(.placeModel)
             }) {
-                FilledButton("Put Item")
+                FilledButton(LocalizedContent.putItem)
             }
             .padding(.bottom, 50)
             .frame(width: UIScreen.main.bounds.width - 16, height: 50, alignment: .center)

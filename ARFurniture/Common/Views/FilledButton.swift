@@ -20,7 +20,7 @@ struct FilledButton: View {
     
     var body: some View {
         Text(buttonText)
-            .font(.custom("Lufga-Regular", size: 17))
+            .font(.button)
             .padding(16)
             .frame(width: UIScreen.main.bounds.width - 16, height: 50, alignment: .center)
             .background(Color.accent)
