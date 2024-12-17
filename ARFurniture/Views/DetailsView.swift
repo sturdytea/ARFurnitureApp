@@ -55,7 +55,3 @@ struct DetailsView: View {
         .background(Color.backgroundPrimary)
     }
 }
-
-#Preview {
-    DetailsView(FurnitureModel(id: 0, modelName: "chair_swan.usdz", name: "Chair Swan", price: 19.9, description: "Description", type: "Chair"))
-}

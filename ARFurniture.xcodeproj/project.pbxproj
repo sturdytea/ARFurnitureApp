@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83596442D118A25003C8FF3 /* FurnitureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83596432D118A25003C8FF3 /* FurnitureService.swift */; };
+		B83596472D118C5C003C8FF3 /* FurnitureResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83596462D118C5C003C8FF3 /* FurnitureResponseBody.swift */; };
+		B835964A2D118CA9003C8FF3 /* FurnitureError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83596492D118CA9003C8FF3 /* FurnitureError.swift */; };
+		B835964C2D11956C003C8FF3 /* FurnitureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B835964B2D11956C003C8FF3 /* FurnitureTypes.swift */; };
 		B8B4B7992CE344F800896EF6 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = B8B4B7982CE344F800896EF6 /* FocusEntity */; };
 		B8B4B90C2CECC96400896EF6 /* arm_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8D82CECC96400896EF6 /* arm_chair.usdz */; };
 		B8B4B90D2CECC96400896EF6 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B8D92CECC96400896EF6 /* chair_swan.usdz */; };
@@ -56,6 +60,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B83596432D118A25003C8FF3 /* FurnitureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureService.swift; sourceTree = "<group>"; };
+		B83596462D118C5C003C8FF3 /* FurnitureResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureResponseBody.swift; sourceTree = "<group>"; };
+		B83596492D118CA9003C8FF3 /* FurnitureError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureError.swift; sourceTree = "<group>"; };
+		B835964B2D11956C003C8FF3 /* FurnitureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureTypes.swift; sourceTree = "<group>"; };
 		B83911AF2CBE6C4C004030BB /* ARFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B4B8D82CECC96400896EF6 /* arm_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = arm_chair.usdz; sourceTree = "<group>"; };
 		B8B4B8D92CECC96400896EF6 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = chair_swan.usdz; sourceTree = "<group>"; };
@@ -123,6 +131,30 @@
 				B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */,
 			);
 			path = ViewRepresentables;
+			sourceTree = "<group>";
+		};
+		B83596422D1189E3003C8FF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B83596432D118A25003C8FF3 /* FurnitureService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B83596452D118C3D003C8FF3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B83596462D118C5C003C8FF3 /* FurnitureResponseBody.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		B83596482D118C9A003C8FF3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B83596492D118CA9003C8FF3 /* FurnitureError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		B83911A62CBE6C4C004030BB = {
@@ -201,6 +233,7 @@
 				B8B4B93B2CECCE4400896EF6 /* Extensions */,
 				B8B4B8F32CECC96400896EF6 /* Fonts */,
 				B8B4B8F92CECC96400896EF6 /* Views */,
+				B835964B2D11956C003C8FF3 /* FurnitureTypes.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -208,6 +241,8 @@
 		B8B4B8FE2CECC96400896EF6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B83596482D118C9A003C8FF3 /* Errors */,
+				B83596452D118C3D003C8FF3 /* Responses */,
 				B8B4B8FB2CECC96400896EF6 /* CarouselItemModel.swift */,
 				B8B4B8FC2CECC96400896EF6 /* FurnitureModel.swift */,
 				B8B4B8FD2CECC96400896EF6 /* FurnitureProtocol.swift */,
@@ -245,6 +280,7 @@
 		B8B4B90B2CECC96400896EF6 /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
+				B83596422D1189E3003C8FF3 /* Services */,
 				B8B4B8E02CECC96400896EF6 /* Assets */,
 				B8B4B8FA2CECC96400896EF6 /* Common */,
 				B8B4B8FE2CECC96400896EF6 /* Models */,
@@ -373,17 +409,21 @@
 				B8B4B9292CECC96400896EF6 /* CircleButton.swift in Sources */,
 				B8B4B92A2CECC96400896EF6 /* FilledButton.swift in Sources */,
 				B8B4B92B2CECC96400896EF6 /* HorizontalFilterView.swift in Sources */,
+				B835964A2D118CA9003C8FF3 /* FurnitureError.swift in Sources */,
 				B8B4B92C2CECC96400896EF6 /* ListingItem.swift in Sources */,
 				B8B4B92D2CECC96400896EF6 /* NewsBanner.swift in Sources */,
+				B83596472D118C5C003C8FF3 /* FurnitureResponseBody.swift in Sources */,
 				B8B4B92E2CECC96400896EF6 /* CarouselItemModel.swift in Sources */,
 				B8B4B92F2CECC96400896EF6 /* FurnitureModel.swift in Sources */,
 				B8B4B9302CECC96400896EF6 /* FurnitureProtocol.swift in Sources */,
 				B8B4B9312CECC96400896EF6 /* FurnitureViewModel.swift in Sources */,
 				B8B4B9322CECC96400896EF6 /* ARCameraView.swift in Sources */,
+				B835964C2D11956C003C8FF3 /* FurnitureTypes.swift in Sources */,
 				B8B4B9332CECC96400896EF6 /* ContentView.swift in Sources */,
 				B8B4B9342CECC96400896EF6 /* DetailsView.swift in Sources */,
 				B8B4B93D2CECCE5000896EF6 /* Font.swift in Sources */,
 				B8B4B9352CECC96400896EF6 /* ARFurnitureApp.swift in Sources */,
+				B83596442D118A25003C8FF3 /* FurnitureService.swift in Sources */,
 				B8B4B93A2CECCB4600896EF6 /* LocalizedContent.swift in Sources */,
 				B8B4B9362CECC96400896EF6 /* CustomARViewRepresentable.swift in Sources */,
 			);

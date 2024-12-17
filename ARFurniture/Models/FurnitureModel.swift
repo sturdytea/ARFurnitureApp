@@ -10,24 +10,49 @@
     
 
 import Foundation
+import Combine
 
-struct FurnitureModel: Codable, Identifiable, Hashable {
-    var id: Int
-    var modelName: String
-    var name: String
-    var price: Double
-    var description: String
-    var type: String
-    var isRecommended: Bool
+struct FurnitureModel: Hashable, Equatable {
+    private let item: FurnitureResponse
+    private var subscriptions = Set<AnyCancellable>()
     
+    var id: Int {
+        item.id
+    }
     
-    init(id: Int, modelName: String, name: String, price: Double, description: String, type: String, isRecommended: Bool = false) {
-        self.id = id
-        self.modelName = modelName
-        self.name = name
-        self.price = price
-        self.description = description
-        self.type = type
-        self.isRecommended = isRecommended
+    var modelName: String {
+        item.modelName
+    }
+    
+    var name: String {
+        item.name
+    }
+    
+    var price: Double {
+        item.price
+    }
+    
+    var description: String {
+        item.description
+    }
+    
+    var type: String {
+        item.type
+    }
+    
+    var isRecommended: Bool {
+        item.isRecommended
+    }
+    
+    init(_ item: FurnitureResponse) {
+        self.item = item
+    }
+    
+    static func ==(lhs: FurnitureModel, rhs: FurnitureModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
