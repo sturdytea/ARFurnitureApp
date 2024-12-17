@@ -29,7 +29,7 @@ struct ContentView: View {
                         .foregroundStyle(.textPrimary)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(viewModel.recommendedFurniture, id: \.self) { furniture in
+                            ForEach(viewModel.recommendedFurnitures, id: \.self) { furniture in
                                 NavigationLink {
                                     DetailsView(furniture)
                                 } label: {
@@ -46,8 +46,9 @@ struct ContentView: View {
                     // MARK: - More offers
                     HorizontalFilterView(selectedType: $selectedType)
                         .environmentObject(viewModel)
+                    
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: UIScreen.main.bounds.width / 3))], spacing: 16) {
-                        ForEach(viewModel.filteredFurniture.filter({ furniture in
+                        ForEach(viewModel.filteredFurnitures.filter({ furniture in
                             filterType(furniture)
                         }), id: \.self) { furniture in
                             NavigationLink {
@@ -59,10 +60,9 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-                .frame(maxHeight: .infinity)
                 .navigationBarTitleDisplayMode(.inline)
-                .background(Color.backgroundPrimary)
             }
+            .background(Color.backgroundPrimary)
         }
         .searchable(text: $viewModel.searchText, suggestions: {
             ForEach(viewModel.filteredSuggestions, id: \.self) { suggestion in
@@ -79,9 +79,8 @@ struct ContentView: View {
     private func filterType(_ furniture: FurnitureModel) -> Bool {
         if selectedType == FurnitureTypes.all || selectedType.rawValue == furniture.type {
             return true
-        } else {
-            return false
         }
+            return false
     }
 }
 

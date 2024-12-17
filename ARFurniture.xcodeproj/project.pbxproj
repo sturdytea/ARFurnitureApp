@@ -117,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B83596412D116916003C8FF3 /* ViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */,
+			);
+			path = ViewRepresentables;
+			sourceTree = "<group>";
+		};
 		B83911A62CBE6C4C004030BB = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +234,7 @@
 		B8B4B9062CECC96400896EF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B83596412D116916003C8FF3 /* ViewRepresentables */,
 				B8B4B9032CECC96400896EF6 /* ARCameraView.swift */,
 				B8B4B9042CECC96400896EF6 /* ContentView.swift */,
 				B8B4B9052CECC96400896EF6 /* DetailsView.swift */,
@@ -243,7 +252,6 @@
 				B8B4B9022CECC96400896EF6 /* ViewModels */,
 				B8B4B9062CECC96400896EF6 /* Views */,
 				B8B4B9072CECC96400896EF6 /* ARFurnitureApp.swift */,
-				B8B4B9092CECC96400896EF6 /* CustomARViewRepresentable.swift */,
 				B8B4B90A2CECC96400896EF6 /* Info.plist */,
 				B8B4B9392CECCB4600896EF6 /* LocalizedContent.swift */,
 			);
